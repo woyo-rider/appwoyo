@@ -1,0 +1,16 @@
+.credit-card-form-view {
+  display: block;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0 var(--lumo-space-l);
+}
+.credit-card-form-view .button-layout {
+  margin-bottom: var(--lumo-space-l);
+  margin-top: var(--lumo-space-m);
+  /*border-radius: 25px;*/
+}
+
+.credit-card-form-view  .button{
+    background-color : #562E91;
+    border-radius : 25px;
+}

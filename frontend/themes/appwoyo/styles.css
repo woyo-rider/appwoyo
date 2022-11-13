@@ -1,0 +1,31 @@
+@import url('./main-layout.css');
+@import url('./views/signup-view.css');
+@import url('./views/bootstrap.min.css');
+@import url('./views/person-form-view.css');
+@import url('./views/address-form-view.css');
+@import url('./views/checkout-form-view.css');
+@import url('./views/credit-card-form-view.css');
+@import url('./views/master-detail-view.css');
+@import url('./views/collaborative-master-detail-view.css');
+@import url('./views/map-view.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+html {
+  --lumo-border-radius: calc(var(--lumo-size-m) / 2);
+  --lumo-font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  --lumo-primary-text-color: rgb(12, 228, 138);
+  --lumo-primary-color-50pct: rgba(12, 228, 138, 0.5);
+  --lumo-primary-color-10pct: rgba(12, 228, 138, 0.1);
+  --lumo-primary-color: hsl(155, 90%, 47%);
+  --lumo-header-text-color: hsl(264, 52%, 37%);
+}
+
+[theme~="dark"] {
+}
+
+
+vcf-nav-item::part(item):hover {
+  color: var(--lumo-primary-text-color);
+  background-color: var(--lumo-primary-color-10pct);
+
+}

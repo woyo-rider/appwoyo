@@ -1,0 +1,33 @@
+<custom-style>
+  <style>
+
+html {
+  --lumo-border-radius: calc(var(--lumo-size-m) / 2);
+  --lumo-font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  --lumo-primary-text-color: rgb(12, 228, 138);
+  --lumo-primary-color-50pct: rgba(12, 228, 138, 0.5);
+  --lumo-primary-color-10pct: rgba(12, 228, 138, 0.1);
+  --lumo-primary-color: hsl(155, 90%, 47%);
+  --lumo-header-text-color: hsl(264, 52%, 37%);
+}
+
+[theme~="dark"] {
+}
+
+  </style>
+</custom-style>
+
+
+<dom-module id="text-field-style" theme-for="vaadin-text-field">
+  <template>
+    <style>
+    [part="input-field"]{
+        box-shadow:inset 0 0 0 1px var(--lumo-contrast-30pct);
+        background-color:var(--lumo-base-color);
+    }
+    :host([invalid]) [part="input-field"]{
+        box-shadow:inset 0 0 0 1px var(--lumo-error-color);
+    }
+    </style>
+  </template>
+</dom-module>
