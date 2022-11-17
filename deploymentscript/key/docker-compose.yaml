@@ -2,6 +2,8 @@
 version: '2'
 services:
   keycloak:
+    volumes:
+      - './data:/opt/jboss/keycloak/standalone/data'
     image: quay.io/keycloak/keycloak:14.0.0
     command: -c standalone.xml
     environment:
