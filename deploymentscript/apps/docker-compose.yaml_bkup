@@ -1,0 +1,15 @@
+version: '3'
+services:
+  appwoyo:
+    image: appwoyo:latest
+    container_name: appwoyo
+    restart: unless-stopped   
+    ports:
+      - '18080:8091'   
+    volumes:
+      - '/etc/hosts:/etc/hosts'
+
+
+
+
+
